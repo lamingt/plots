@@ -1,4 +1,6 @@
 # Setup
 
-In /backend run ./gradlew bootRun
-In another terminal in /frontend run npm i then npm run dev
+1. In `/backend`, run: `./gradlew bootRun`
+2. In another terminal, go to `/frontend` and run:  
+   `npm i`  
+   `npm run dev`
