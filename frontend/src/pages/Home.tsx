@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import HomeChart from "../components/HomeChart";
+import { Typewriter } from "react-simple-typewriter";
 
 function Home() {
   return (
@@ -10,7 +11,17 @@ function Home() {
             className="text-[1.73rem] sm:text-[2.7rem] md:text-[3.2rem] lg:text-[4rem] xl:text-[5rem] leading-tight
                         w-[320px] sm:w-[500px] md:w-[600px] lg:w-[800px] xl:w-[1000px]"
           >
-            The best plots you'll see in your lifetime
+            The{" "}
+            <Typewriter
+              words={["best", "worst", "craziest", "loveliest"]}
+              loop={false}
+              cursor
+              cursorStyle="_"
+              typeSpeed={80}
+              deleteSpeed={100}
+              delaySpeed={3000}
+            />
+            plots you'll see in your lifetime
           </p>
           <p className="text-xl mt-8 text-gray-400 w-[320px] sm:w-[500px] md:w-[600px] lg:w-[800px] xl:w-[1000px]">
             Inspired by my very fun COMP3411 assignment
